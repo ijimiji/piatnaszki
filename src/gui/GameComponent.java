@@ -49,7 +49,7 @@ public class GameComponent extends JFrame {
                 if (grid[i][j].equals(panel)) {
                     int dy = tokenPositionVertical - i;
                     int dx = tokenPositionHorizontal - j;
-                    if (Math.abs(dx) < 2 && Math.abs(dy) < 2) {
+                    if (Math.abs(dx) + Math.abs(dy) < 2) {
                         makeMove(dy, dx, 1);
                     }
                 }
